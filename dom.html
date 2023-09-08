@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion del DOM</title>
+    <link rel="stylesheet" href="css/dom.css">
+</head>
+<body>
+
+    <div class="cont-principal">
+        <div class="cont-botones">
+            <h2>Interacciones</h2>
+            <button onclick="circulo()">CIRCULO</button>
+            <button onclick="hor()">HORIZONTAL</button>
+            <button onclick="ver()">VERTICAL</button>
+            <button onclick="gif()">GIF</button>
+            <button onclick="degrade()">DEGRADADO</button>
+            <button onclick="moveTop()">TOP</button>
+            <button onclick="moveRight()">RIGHT</button>
+            <button onclick="moveBottom()">BUTTOM</button>
+            <button onclick="moveLeft()">LEFT</button>
+            <button>LEVITAR</button>
+            <button>DIAGONAL</button>
+            <button onclick="panelLateral()">PANEL - LATERAL</button>
+            <button>PANEL - SUPERIOR</button>
+        </div>
+        <div class="cont-figura">
+            <h2 class="titulo">Figura</h2>
+            <div id="figura"></div>
+        </div>
+
+        <div class="panel-lateral">
+
+            <button class="close" onclick="panelLateral()">X</button>
+            <h3>Menu principal</h3>
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Productos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Salir</a>
+
+            </ul>
+        </div>
+    </div>
+    <script src="js/dom.js"></script>
+</body>
+</html>

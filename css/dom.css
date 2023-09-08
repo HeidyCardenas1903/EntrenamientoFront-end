@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root{
+    --primary-color: #2396bd;
+    --secondary-color: #520375;
+    --principal-font: 'Monserrat', sans-serif;
+    --secondary-font: 'Roboto Condensed', sans-serif;
+    --size-titles: 50px;
+    --size-parrafos: 22px;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,label{
+    font-family: var(--principal-font);
+    color: var(--primary-color);
+}
+
+p,li,a,input,button{
+    font-family: var(--secondary-font);
+    color: #666;
+}
+
+.cont-principal{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.cont-botones{
+    width: 50%;
+    text-align: center;
+    padding: 120px 80px;
+    border: 3px solid var(--primary-color);
+}
+
+.cont-figura{
+    width: 50%;
+    text-align: center;
+    padding: 120px 0;
+    border: 3px solid var(--primary-color);
+}
+
+#figura{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    margin: 50px auto;
+    transition: .5s;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    background: #666;
+}
+
+#figura.hor{
+    width: 500px;
+    background: #666;
+    border-radius: 5px;
+}
+
+#figura.ver{
+    height: 400px;
+    background: #cdd856;
+    border-radius: 5px;
+
+}
+
+#figura.gif{
+    background: url(../img/41jP.gif);
+}
+
+#figura.degrade{
+    background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(55, 147, 201));;
+}
+
+button{
+    border: none;
+    padding: 12px 20px;
+    background: #000;
+    margin: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+.panel-lateral{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background: #dbd6d6;
+    top: 0;
+    left: -500px;
+    z-index: 9;
+    text-align: center;
+    padding-top: 120px;
+    transition: .6s;
+}
+
+.panel-lateral.active{
+    left: 0;
+}
+
+.panel-lateral h3{
+    color:#000;
+}
+
+.panel-lateral a{
+    display: block;
+    font-size: 20px;
+    margin: 10px auto;
+    width: 80%;
+    text-decoration: none;
+}
+
+.close{
+    padding: 14px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+
+#figura.top{
+    background: #44ecba;
+    transform: translateY(-50px)
+}
+
+#figura.bottom{
+    background: #7e71f0;
+    transform: translateY(50px)
+}
+
+#figura.left{
+    background: #adb635;
+    transform: translateX(-50px)
+}
+
+#figura.right{
+    background: #df67c1;
+    transform: translateX(50px)
+}

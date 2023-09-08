@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+footer a i{
+    color: white;
+    font-size: 30px;
+    margin: 0px 10px;
+
+}
+
+#preguntas,
+#servicios,
+#nosotros{
+    padding: 100px;
+    text-align: center;
+}
