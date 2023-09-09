@@ -78,3 +78,11 @@ function moveRight(){
     figura.classList.toggle('right')
     titulo.textContent='RIGHT'
 }
+
+function levitar(){
+    const figura = document.querySelector("#figura");
+    const titulo = document.querySelector(".titulo");
+    
+    figura.classList.toggle('levitar')
+    titulo.textContent='LEVITAR'
+}
