@@ -125,7 +125,7 @@ h2{
 }
 
 .close{
-    padding: 14px;
+    padding: 10px;
     background: #000;
     color: #fff;
     position: absolute;
@@ -154,12 +154,35 @@ h2{
 }
 
 #figura.levitar{
-    bottom: -50px;
-    left: 5%;
-    width: 90%;
-    height: 20px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(10px)
+    background: #b84242;
+}
+
+.panel-superior{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #c9f2fc;
+    top: -100px;
+    left: 0;
+    z-index: 9;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    transition:.6s;
+}
+
+.panel-superior.active{
+    top: 0;
+}
+
+.panel-superior h3{
+    color:#000;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.panel-superior a{
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+    font-size: 20px;
 }

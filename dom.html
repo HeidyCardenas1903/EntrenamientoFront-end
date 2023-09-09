@@ -23,7 +23,7 @@
             <button onclick="levitar(o)">LEVITAR</button>
             <button>DIAGONAL</button>
             <button onclick="panelLateral()">PANEL - LATERAL</button>
-            <button>PANEL - SUPERIOR</button>
+            <button onclick="panelSuperior()">PANEL - SUPERIOR</button>
         </div>
         <div class="cont-figura">
             <h2 class="titulo">Figura</h2>
@@ -43,6 +43,21 @@
 
             </ul>
         </div>
+
+        <div class="panel-superior">
+
+            <button class="close" onclick="panelSuperior()">X</button>
+            <h3>Menu principal</h3>
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Productos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Salir</a>
+
+            </ul>
+        </div>
+
     </div>
     <script src="js/dom.js"></script>
 </body>

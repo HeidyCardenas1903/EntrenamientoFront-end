@@ -86,3 +86,8 @@ function levitar(){
     figura.classList.toggle('levitar')
     titulo.textContent='LEVITAR'
 }
+
+function panelSuperior(){
+    const panel = document.querySelector(".panel-superior");
+    panel.classList.toggle('active');
+}
